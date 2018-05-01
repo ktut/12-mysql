@@ -1,0 +1,24 @@
+{
+  "name": "12-mysql",
+  "version": "1.0.0",
+  "description": "small MySQL project where I recreate Amazon... as Bamazon.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktut/12-mysql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktut/12-mysql/issues"
+  },
+  "homepage": "https://github.com/ktut/12-mysql#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "mysql": "^2.15.0"
+  }
+}
