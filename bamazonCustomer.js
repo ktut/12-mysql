@@ -75,12 +75,14 @@ function makePurchase(productObj, quantity) {
         'UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?',
         [quantity, productObj.item_id],
         function(err, res) {
-            console.log("Product purchased.");
+            let totalCost = parseFloat(productObj.price) * parseInt(quantity);
+            console.log(quantity + " of this product has been purchased at a total cost of $" + totalCost + ".");
         }
     )
 }
 
 // EVENTS
+// start sql connection, load products
 connection.connect(function(err) {
     if (err) throw err;
     loadProducts();
